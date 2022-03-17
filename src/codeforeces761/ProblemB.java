@@ -37,6 +37,7 @@ public class ProblemB {
 			
 			// prime number
 			int limit = (int)Math.sqrt(n);
+			limit = 1;
 			for(int k=limit; k >= 1; k--) {
 				if(n%k == 0) {
 					int a = 0;
@@ -49,7 +50,7 @@ public class ProblemB {
 						a = j;
 						b = N - a - 1;
 						
-						if(a!=b && b!=1 && a%b != 0 && b%a != 0) {
+						if(a!=b && b!=1 && gcd(a,b) == 1) {
 							output.append((a*k)+" "+(b*k)+" "+k+"\n");
 							isFound = true;
 							break;
@@ -66,4 +67,8 @@ public class ProblemB {
 		System.out.println(output.toString());
 	}
 
+	public static int gcd (int a, int b) {
+		if (b == 0) return a;
+		return gcd(b, a%b);
+	}
 }
