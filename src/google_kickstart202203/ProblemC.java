@@ -25,7 +25,10 @@ public class ProblemC {
 						int l = k-w;
 						int r = k-1;
 						
-						
+						boolean isPalindrome = false;
+						while(l<r) {
+							
+						}
 					}
 				}
 			}
