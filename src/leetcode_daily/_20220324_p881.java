@@ -17,11 +17,12 @@ class Solution_20220324 {
             }
             ans++;
             int weight = people[i];
-            for(int j=i-1; j>=0; j--) {
+            for(int j=0; j<i; j++) {
                 // check condition
                 if(people[j] != -1 && people[j] + weight <= limit) {
                     weight += people[j];
                     people[j] = -1;
+                    break;
                 }
             }
             // okay let's ride on the boat people i
