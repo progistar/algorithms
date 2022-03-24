@@ -106,6 +106,7 @@ public class P13460_Escaping {
 				MIN_MOVE = Math.min(solve(rx_, ry, bx_, by, maze, stepCount+1), MIN_MOVE);
 			}
 			isBlueInHole = Integer.MAX_VALUE;
+			isRedInHole = Integer.MAX_VALUE;
 		}
 		
 		// down
@@ -142,6 +143,7 @@ public class P13460_Escaping {
 				MIN_MOVE = Math.min(solve(rx, ry_, bx, by_, maze, stepCount+1), MIN_MOVE);
 			}
 			isBlueInHole = Integer.MAX_VALUE;
+			isRedInHole = Integer.MAX_VALUE;
 		}
 		
 		
@@ -178,6 +180,7 @@ public class P13460_Escaping {
 				MIN_MOVE = Math.min(solve(rx_, ry, bx_, by, maze, stepCount+1), MIN_MOVE);
 			}
 			isBlueInHole = Integer.MAX_VALUE;
+			isRedInHole = Integer.MAX_VALUE;
 		}
 		
 		// up
@@ -214,6 +217,7 @@ public class P13460_Escaping {
 				MIN_MOVE = Math.min(solve(rx, ry_, bx, by_, maze, stepCount+1), MIN_MOVE);
 			}
 			isBlueInHole = Integer.MAX_VALUE;
+			isRedInHole = Integer.MAX_VALUE;
 		}
 		
 		return MIN_MOVE;
